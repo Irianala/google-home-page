@@ -1,6 +1,7 @@
 import React from "react";
 import { CSSProperties } from "react";
 import { StyleSheet, View, Text } from "react-native";
+import { Link } from "react-router-dom";
 import google_logo from "./../../assets/components/search/images/google.png";
 import search_icon from "./../../assets/components/search/images/search.png";
 
@@ -40,7 +41,7 @@ export const Search: React.FC<SearchProps> = (props: SearchProps) => {
         fontSize: 13,
         color: "#222"
       }}>
-        Google disponible en: <a href="" style={{textDecoration: "none"}}>English</a>  <a href="" style={{textDecoration: "none"}}>Malagasy</a>
+        Google disponible en: <Link to="" style={{textDecoration: "none"}}>English</Link>  <Link to="" style={{textDecoration: "none"}}>Malagasy</Link>
       </Text>
     </View>
   );
